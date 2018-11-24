@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CounterActivity">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_columnSpan="2"
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/lblRow"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="10dp"
+        android:text="Row:"/>
+
+    <TextView
+        android:id="@+id/txtRow"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="10dp"
+        android:textSize="40dp"
+        android:textColor="@color/colorAccent"
+        android:text="0"/>
+
+    <TextView
+        android:id="@+id/lblRepeat"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="10dp"
+        android:text="Repeat:"/>
+
+    <TextView
+        android:id="@+id/txtRepeat"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="10dp"
+        android:textSize="40dp"
+        android:textColor="@color/colorAccent"
+        android:text="0"/>-->
+
+    <Button
+        android:id="@+id/btnIncrement"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_rowSpan="4"
+        android:layout_gravity="fill"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:textSize="40dp"
+        android:text="+"
+        android:onClick="btnClick"/>
+
+    <Button
+        android:id="@+id/btnDecrement"
+        android:layout_row="5"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:text="-"
+        android:onClick="btnClick"/>
+
+    <CheckBox
+        android:id="@+id/chkLink"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:text="Link counters"
+        android:onClick="btnClick"/>
+
+    <CheckBox
+        android:id="@+id/chkScreenOn"
+        android:text="Keep screen on"
+        android:onClick="btnClick"/>
+
+</GridLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtName"
+        android:text="Project Name:"/>
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lblName"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/lblRepeatRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtRepeatRow"
+        android:text="Repeat Row Count:"/>
+
+    <EditText
+        android:id="@+id/edtRepeatRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtName"
+        android:layout_alignParentRight="true"
+        android:minEms="5"
+        android:inputType="number"
+        android:text="0"/>
+
+    <TextView
+        android:id="@+id/lblRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtRow"
+        android:text="Row Number:"/>
+
+    <EditText
+        android:id="@+id/edtRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtRepeatRow"
+        android:layout_alignParentRight="true"
+        android:minEms="5"
+        android:inputType="number"
+        android:text="0"/>
+
+    <TextView
+        android:id="@+id/lblRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtRepeat"
+        android:text="Repeat Number:"/>
+
+    <EditText
+        android:id="@+id/edtRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtRow"
+        android:layout_alignParentRight="true"
+        android:minEms="5"
+        android:inputType="number"
+        android:text="0"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtRepeat"
+        android:layout_centerHorizontal="true"
+        android:text="Confirm"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:onClick="btnConfirm"/>
+
+</RelativeLayout>
