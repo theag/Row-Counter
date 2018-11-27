@@ -5,4 +5,9 @@
         <item name="android:colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="CounterText" parent="AppTheme">
+        <item name="android:textSize">44sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
 </resources>
