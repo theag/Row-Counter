@@ -13,6 +13,7 @@
         android:layout_gravity="center_vertical"
         android:layout_marginRight="5dp"
         android:layout_marginLeft="10dp"
+        style="@android:style/TextAppearance.Medium"
         android:text="name"/>
 
     <TextView
@@ -21,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_gravity="center_vertical"
+        style="@android:style/TextAppearance.Medium"
         android:textColor="@color/colorAccent"
         android:text="10"/>
 
@@ -28,6 +30,7 @@
         android:id="@+id/btnDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
         android:src="@drawable/ic_delete_black_24dp"
         style="@android:style/Widget.Holo.Button.Borderless"
         android:onClick="btnClick"/>
